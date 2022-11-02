@@ -69,7 +69,6 @@ button {
   background: white;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  padding: 15px 10px;
   margin: 15px 0;
   position: relative;
   height: auto;
@@ -98,15 +97,33 @@ button {
             transform: scale(1);
   }
 }
+.box {
+  padding: 20px 30px;
+  border-radius: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
 .box p {
   font-size: 17px;
   font-family: sans-serif;
 }
 
+.notes input[type=checkbox] {
+  margin-right: 15px;
+}
+
 .notes button {
   position: absolute;
-  top: 5px;
-  right: 5px;
+  margin-top: 0;
+  right: 2%;
   border: none;
   background: none;
   cursor: pointer;

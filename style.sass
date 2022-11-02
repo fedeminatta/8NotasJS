@@ -55,7 +55,6 @@ button
 .box
   background: white
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-  padding: 15px 10px
   margin: 15px 0
   position: relative
   height: auto
@@ -68,14 +67,24 @@ button
   to
     transform: scale(1)
 
-.box p
-  font-size: 17px
-  font-family: sans-serif
+.box
+  padding: 20px 30px
+  border-radius: 3px
+  align-items: center
+  display: flex
+  flex-flow: row nowrap
+  p
+    font-size: 17px
+    font-family: sans-serif
+
+.notes
+  input[type='checkbox']
+    margin-right: 15px
 
 .notes button
   position: absolute
-  top: 5px
-  right: 5px
+  margin-top: 0
+  right: 2%
   border: none
   background: none
   cursor: pointer
