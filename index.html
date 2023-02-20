@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Notas</title>
-        <link rel="stylesheet" href="style.min.css" />
-        <script src="app.js" defer></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Notas</h1>
-            <div class="text-area">
-                <textarea placeholder="Escribe tu nota..."></textarea>
+<html lang="es">
 
-                <div class="color">
-                    <label for="color">Escoje el color:</label>
-                    <input type="color" id="color" name="color" value="#000" />
-                    <label id="sizelabel" for="size">Tamaño:</label>
-                    <input type="number" value="17" min="8" max="100" id="size" />
-                </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notas</title>
+    <link rel="stylesheet" href="style.min.css" />
+    <script src="app.js" defer></script>
+</head>
 
-                <button id="add">Añadir</button>
+<body>
+    <div class="container">
+        <h1>Notas</h1>
+        <div class="text-area">
+            <textarea placeholder="Escribe tu nota..."></textarea>
+
+            <div class="color">
+                <label for="color">Escoje el color:</label>
+                <input type="color" id="color" name="color" value="#000" />
+                <label id="sizelabel" for="size">Tamaño:</label>
+                <input type="number" value="17" min="8" max="100" id="size" />
             </div>
 
-            <div class="notes"></div>
+            <button id="add">Añadir</button>
         </div>
-    </body>
+
+        <div class="notes"></div>
+    </div>
+</body>
+
 </html>
